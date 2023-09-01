@@ -1,0 +1,50 @@
+[
+  {
+    "fechaLectura": "2023-08-19",
+    "numeroMedidor": "1002",
+    "lecturaAnterior": 1021,
+    "lecturaActual": 1500,
+    "latitud": -29.419996472693477,
+    "longitud": -66.85779253258659
+  },
+  {
+    "fechaLectura": "2023-08-19",
+    "numeroMedidor": "100",
+    "lecturaAnterior": 101,
+    "lecturaActual": 120,
+    "latitud": -29.415493230511714,
+    "longitud": -66.85463905334473
+  },
+  {
+    "fechaLectura": "2023-08-19",
+    "numeroMedidor": "101",
+    "lecturaAnterior": 300,
+    "lecturaActual": 350,
+    "latitud": -29.412913788544714,
+    "longitud": -66.85806155204773
+  },
+  {
+    "fechaLectura": "2023-08-19",
+    "numeroMedidor": "102",
+    "lecturaAnterior": 300,
+    "lecturaActual": 1000,
+    "latitud": -29.413007247730093,
+    "longitud": -66.86060965061188
+  },
+  {
+    "fechaLectura": "2023-08-26",
+    "numeroMedidor": "a-123",
+    "lecturaAnterior": 12,
+    "lecturaActual": 34,
+    "latitud": -29.418329606511165,
+    "longitud": -66.8631362915039
+  },
+  {
+    "fechaLectura": "2023-08-26",
+    "numeroMedidor": "a-125",
+    "lecturaAnterior": 12,
+    "lecturaActual": 34,
+    "latitud": -29.413918470283402,
+    "longitud": -66.84764385223389
+  }
+]

@@ -1,0 +1,60 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Simulador de Consumo de Agua</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlQq49xn3yDX92nwJ7hEmtwgQcpCSSwaw&callback=inicializarMapa" async defer></script>
+    <script src="final.js"></script>
+  </head>
+  <body onload="initMap()">
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Simulador de Consumo de Agua</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="agregarClientePorMapa()">Agregar Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="filtrarPorNumeroMedidor()">Filtrar</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Generar Archivos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" onclick="generarArchivoJSON()">Generar JSON</a>
+              <a class="dropdown-item" href="#" onclick="generarGeoJSON()">Generar GeoJSON</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cargar Archivos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" onclick="cargarJSONConSweetAlert()">Cargar JSON</a>
+              <a class="dropdown-item" href="#" onclick="cargarGeoJSON()">Cargar GeoJSON</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <div id="map" style="height: 600px;"></div>
+    <table id="tablaClientes"></table>
+    <div id="contenedorTabla"></div>
+  
+    <div id="resultados"></div>
+  
+  </body>
+  </html>
+  
